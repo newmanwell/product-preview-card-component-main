@@ -73,6 +73,10 @@ button {
   border: none;
 }
 
+button:hover {
+  background-color: hsl(212, 21%, 14%);
+}
+
 @media (max-width: 450px) {
   .card-container {
     flex-direction: column;
