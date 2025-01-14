@@ -40,6 +40,7 @@ main {
   color: hsl(228, 12%, 48%);
   font-size: 1rem;
   font-family: "Montserrat";
+  letter-spacing: .2rem;
 }
 
 .description {
@@ -67,9 +68,36 @@ main {
 button {
   background-color: hsl(158, 36%, 37%);
   color: antiquewhite;
-  border-radius: 3%;
+  border-radius: 5%;
   padding: 10px 50px;
   border: none;
+}
+
+@media (max-width: 450px) {
+  .card-container {
+    flex-direction: column;
+  }
+
+  .facts-container {
+    border-top-right-radius: 0%;
+    border-bottom-left-radius: 5%;
+    height: auto;
+    width: 100%;
+  }
+
+  .img-container {
+    background-image: url(./images/image-product-mobile.jpg);
+    background-size: cover;
+    height: 300px;
+    width: 100%;
+    border-bottom-left-radius: 0%;
+    border-top-right-radius: 5%;
+  }
+
+  button {
+    display: block;
+    width: 95%;
+  }
 }
 
 .attribution { 
