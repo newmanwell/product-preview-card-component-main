@@ -1,0 +1,116 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: hsl(30, 38%, 92%);
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  font-family: "Fraunces";
+}
+
+.card-container {
+  display: flex;
+  border-radius: 5%;
+  height: auto;
+  width: 500px;
+}
+
+.img-container {
+  background-image: url(./images/image-product-desktop.jpg);
+  background-size: cover;
+  width: 50%;
+  border-top-left-radius: 5%;
+  border-bottom-left-radius: 5%;
+}
+
+
+.facts-container {
+  background-color: white;
+  padding: 20px;
+  width: 50%;
+  border-top-right-radius: 5%;
+  border-bottom-right-radius: 5%;
+}
+
+.facts-container h2 {
+  color: hsl(228, 12%, 48%);
+  font-size: 1rem;
+  font-family: "Montserrat";
+  letter-spacing: .2rem;
+}
+
+.description {
+  color: hsl(228, 12%, 48%);
+}
+
+.price {
+  display: flex;
+}
+
+.sale-price {
+  color: hsl(158, 36%, 37%);
+  padding-right: 20px;
+  font-weight: 800;
+  font-size: 24px;
+}
+
+.og-price {
+  text-decoration: line-through;
+  color: hsl(228, 12%, 48%);
+  vertical-align: middle;
+  line-height: 45.5px;
+}
+
+button {
+  background-color: hsl(158, 36%, 37%);
+  color: antiquewhite;
+  border-radius: 5%;
+  padding: 10px 50px;
+  border: none;
+}
+
+button:hover {
+  background-color: hsl(212, 21%, 14%);
+}
+
+@media (max-width: 450px) {
+  .card-container {
+    flex-direction: column;
+  }
+
+  .facts-container {
+    border-top-right-radius: 0%;
+    border-bottom-left-radius: 5%;
+    height: auto;
+    width: 100%;
+  }
+
+  .img-container {
+    background-image: url(./images/image-product-mobile.jpg);
+    background-size: cover;
+    height: 300px;
+    width: 100%;
+    border-bottom-left-radius: 0%;
+    border-top-right-radius: 5%;
+  }
+
+  button {
+    display: block;
+    width: 95%;
+  }
+}
+
+.attribution { 
+  font-size: 11px; 
+  text-align: center;
+  margin-top: 15px;
+}
+
+.attribution a { 
+  color: hsl(228, 45%, 44%); 
+}
+
