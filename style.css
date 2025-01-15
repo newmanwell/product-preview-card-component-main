@@ -23,8 +23,8 @@ main {
   background-image: url(./images/image-product-desktop.jpg);
   background-size: cover;
   width: 50%;
-  border-top-left-radius: 5%;
-  border-bottom-left-radius: 5%;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
 }
 
 
@@ -32,8 +32,8 @@ main {
   background-color: white;
   padding: 20px;
   width: 50%;
-  border-top-right-radius: 5%;
-  border-bottom-right-radius: 5%;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
 }
 
 .facts-container h2 {
@@ -68,7 +68,7 @@ main {
 button {
   background-color: hsl(158, 36%, 37%);
   color: antiquewhite;
-  border-radius: 5%;
+  border-radius: 5px;
   padding: 10px 50px;
   border: none;
 }
@@ -83,8 +83,8 @@ button:hover {
   }
 
   .facts-container {
-    border-top-right-radius: 0%;
-    border-bottom-left-radius: 5%;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 15px;
     height: auto;
     width: 100%;
   }
@@ -94,8 +94,8 @@ button:hover {
     background-size: cover;
     height: 300px;
     width: 100%;
-    border-bottom-left-radius: 0%;
-    border-top-right-radius: 5%;
+    border-bottom-left-radius: 0px;
+    border-top-right-radius: 15px;
   }
 
   button {
